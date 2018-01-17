@@ -1,5 +1,6 @@
 # SimpleDialog
-简单的对话框
+万能的对话框
+======
 allprojects {
 		repositories {
 			...
