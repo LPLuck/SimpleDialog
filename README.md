@@ -1,6 +1,7 @@
 # SimpleDialog
 万能的对话框
 ======
+```java
 allprojects {
 		repositories {
 			...
@@ -11,3 +12,4 @@ allprojects {
   dependencies {
 	        compile 'com.github.LPLuck:SimpleDialog:1.0'
 	}
+```
