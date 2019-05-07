@@ -1,4 +1,4 @@
-# SimpleDialog
+# SmartDialog
 对话框
 ======
 引入
