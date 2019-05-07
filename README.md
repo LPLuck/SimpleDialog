@@ -1,5 +1,5 @@
-# SimpleDialog
-万能的对话框
+# SmartDialog
+对话框
 ======
 引入
 ----
@@ -12,6 +12,6 @@ allprojects {
 	   }
   
   dependencies {
-	        compile 'com.github.LPLuck:SimpleDialog:1.0'
+	       implementation 'com.github.LPLuck:SmartDialog:1.1'
 	}
 ```
