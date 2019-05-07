@@ -1,30 +1,29 @@
-package com.liupeng.lp.library;
+package com.lp.library;
 
 import android.app.Dialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.support.annotation.LayoutRes;
-import android.support.annotation.StyleRes;
 import android.view.View;
 import android.view.ViewGroup;
 
 /**
  * 创建者：L.P
  * 创建时间：on 2018/1/5
- * 类描述：自定义万能对话框，仿照系统的来写
+ * 类描述：
  */
 
-public class AlertDialog extends Dialog {
+public class SmartDialog extends Dialog {
 
-    private AlertController mAlert;
+    private SmartController mAlert;
 
-    protected AlertDialog(Context context) {
+    protected SmartDialog(Context context) {
         this(context, 0);
     }
 
-    protected AlertDialog(Context context, int themeResId) {
+    protected SmartDialog(Context context, int themeResId) {
         super(context, themeResId);
-        mAlert = new AlertController(getContext(), getWindow());
+        mAlert = new SmartController(getContext(), getWindow());
     }
 
     public <T extends View> T getView(int viewId) {
@@ -37,14 +36,14 @@ public class AlertDialog extends Dialog {
 
     public static class Builder {
 
-        private final AlertController.AlertParams P;
+        private final SmartController.AlertParams P;
 
         public Builder(Context context) {
             this(context, R.style.dialog);
         }
 
         public Builder(Context context, int themeResId) {
-            P = new AlertController.AlertParams(context, themeResId);
+            P = new SmartController.AlertParams(context, themeResId);
         }
 
         public Builder setText(int textId, CharSequence text) {
@@ -88,8 +87,8 @@ public class AlertDialog extends Dialog {
             return this;
         }
 
-        public AlertDialog create() {
-            final AlertDialog dialog = new AlertDialog(P.mContext, P.themeResId);
+        public SmartDialog create() {
+            final SmartDialog dialog = new SmartDialog(P.mContext, P.themeResId);
             P.apply(dialog.mAlert);
             dialog.setCancelable(P.mCancelable);
             if (P.mCancelable) {
@@ -103,8 +102,8 @@ public class AlertDialog extends Dialog {
             return dialog;
         }
 
-        public AlertDialog show() {
-            final AlertDialog dialog = create();
+        public SmartDialog show() {
+            final SmartDialog dialog = create();
             dialog.show();
             return dialog;
         }

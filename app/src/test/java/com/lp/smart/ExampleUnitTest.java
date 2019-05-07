@@ -1,4 +1,4 @@
-package com.liupeng.lp.library;
+package com.lp.smart;
 
 import org.junit.Test;
 

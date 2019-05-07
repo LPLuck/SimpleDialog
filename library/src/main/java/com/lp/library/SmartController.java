@@ -1,8 +1,7 @@
-package com.liupeng.lp.library;
+package com.lp.library;
 
 import android.content.Context;
 import android.content.DialogInterface;
-import android.util.ArrayMap;
 import android.util.SparseArray;
 import android.view.Gravity;
 import android.view.View;
@@ -10,21 +9,18 @@ import android.view.ViewGroup;
 import android.view.Window;
 import android.view.WindowManager;
 
-import java.util.HashMap;
-import java.util.Map;
-
 /**
  * 创建者：L.P
  * 创建时间：on 2018/1/5
  * 类描述：
  */
 
-public class AlertController {
+public class SmartController {
 
     private Window mWindow;
     private DialogViewHelper mViewHelper;
 
-    public AlertController(Context context, Window window) {
+    public SmartController(Context context, Window window) {
         this.mWindow = window;
     }
 
@@ -62,7 +58,7 @@ public class AlertController {
 
         }
 
-        public void apply(AlertController dialog) {
+        public void apply(SmartController dialog) {
             Window mWindow = dialog.mWindow;
             if (mContentViewId != 0) {
                 this.mViewHelper = new DialogViewHelper(mContext);

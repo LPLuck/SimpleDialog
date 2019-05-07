@@ -1,4 +1,4 @@
-package com.liupeng.lp.simpledialog;
+package com.lp.smart;
 
 import android.content.DialogInterface;
 import android.support.v7.app.AppCompatActivity;
@@ -7,8 +7,7 @@ import android.view.Gravity;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
-
-import com.liupeng.lp.library.AlertDialog;
+import com.lp.library.SmartDialog;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -24,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
      * @param view
      */
     public void bottom(View view) {
-        final AlertDialog dialog = new AlertDialog.Builder(this).
+        final SmartDialog dialog = new SmartDialog.Builder(this).
                 setContentView(R.layout.detail_comment_dialog).
                 setFullWidth().
                 setGravity(Gravity.BOTTOM, R.style.dialog_from_bottom_anim).
@@ -44,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
      * @param view
      */
     public void head(View view) {
-        AlertDialog dialog = new AlertDialog.Builder(this).
+        SmartDialog dialog = new SmartDialog.Builder(this).
                 setContentView(R.layout.detail_comment_dialog).
                 setFullWidth().
                 setOnClickLlistener(R.id.submit_btn, new View.OnClickListener() {
@@ -69,7 +68,7 @@ public class MainActivity extends AppCompatActivity {
      * @param view
      */
     public void center(View view) {
-        AlertDialog dialog = new AlertDialog.Builder(this).
+        SmartDialog dialog = new SmartDialog.Builder(this).
                 setContentView(R.layout.detail_comment_dialog).
                 setOnCancelListener(new DialogInterface.OnCancelListener() {
                     @Override
@@ -85,7 +84,7 @@ public class MainActivity extends AppCompatActivity {
      * @param view
      */
     public void full(View view) {
-        AlertDialog dialog = new AlertDialog.Builder(this).
+        SmartDialog dialog = new SmartDialog.Builder(this).
                 setContentView(R.layout.detail_comment_dialog).
                 setFullWidth().
                 setVisible(R.id.submit_btn, View.GONE).

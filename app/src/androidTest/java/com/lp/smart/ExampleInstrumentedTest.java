@@ -1,4 +1,4 @@
-package com.liupeng.lp.simpledialog;
+package com.lp.smart;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.liupeng.lp.simpledialog", appContext.getPackageName());
+        assertEquals("com.lp.simpledialog", appContext.getPackageName());
     }
 }

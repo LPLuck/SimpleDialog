@@ -1,4 +1,4 @@
-package com.liupeng.lp.library;
+package com.lp.library;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.liupeng.lp.library.test", appContext.getPackageName());
+        assertEquals("com.lp.library.test", appContext.getPackageName());
     }
 }

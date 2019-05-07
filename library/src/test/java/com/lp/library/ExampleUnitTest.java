@@ -1,4 +1,4 @@
-package com.liupeng.lp.simpledialog;
+package com.lp.library;
 
 import org.junit.Test;
 
